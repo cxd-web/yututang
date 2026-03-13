@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 核心：手机端适配 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玉土堂 - 藏玉于土 以文镌山</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "微软雅黑", "PingFang SC", sans-serif;
+        }
+
+        /* 页面主体：浅橙色背景 + 手机适配 */
+        body {
+            background-color: #FFF3E0; /* 浅橙色（暖调浅橙，视觉更舒适） */
+            padding: 15px;
+            line-height: 1.8;
+            color: #333; /* 文字深灰，提升阅读体验 */
+        }
+
+        /* 文章容器：内边距 + 底部间距 */
+        .article-container {
+            background-color: #fff; /* 文章白底，突出内容 */
+            padding: 20px 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* 轻微阴影，增加层次感 */
+        }
+
+        /* 文章标题样式 */
+        .article-container h1 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 15px;
+            color: #8D493A; /* 深棕橙，呼应主题 */
+            font-weight: bold;
+        }
+
+        /* 文章段落样式 */
+        .article-container p {
+            font-size: 14px;
+            margin-bottom: 12px;
+            text-indent: 2em; /* 首行缩进，符合中文阅读习惯 */
+        }
+
+        /* 图片容器：每张图片独立卡片 + 间距 */
+        .image-item {
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden; /* 裁剪图片圆角外的部分 */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* 图片样式：宽度100%适配手机，高度自适应 */
+        .image-item img {
+            width: 100%;
+            height: auto; /* 保持图片比例，避免变形 */
+            display: block; /* 去除图片底部空白 */
+        }
+
+        /* 图片说明文字（可选，提升体验） */
+        .image-desc {
+            padding: 10px 15px;
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 文章部分（置顶） -->
+    <div class="article-container">
+        <h1>玉土留声，九水镌文</h1>
+        <p>黔北多山，山孕土，土藏玉，玉凝气，气成文脉。以藏玉土，是天地不言的藏纳；玉土堂，是文人守心的堂奥；张画鸣先生以笔墨为引，将这一脉温润与苍劲，镌入九道水的摩崖石壁，让山、土、玉、书、石，在此浑然合一。</p>
+        <p>土为万物之基，玉为山川之精。古人云“藏玉于土，蕴德于怀”，黔北的红壤与青石间，本就藏着千年未散的灵秀。玉不琢不成器，土不厚不载物，以藏玉土，藏的是璞玉浑金的本真，藏的是静水流深的修为。这一方水土，不事张扬，却以温润滋养草木，以厚重托举峰峦，恰如文人笔下的留白，墨色未浓，气韵已生。</p>
+        <p>玉土堂便立于此间，以土为基，以玉为魂，以书画为心灯。堂号藏意，是藏玉于土的谦抑，亦是琢玉成器的坚守。张画鸣先生耽于笔墨数十载，从警营到书斋，从案头尺素到壁立千仞，始终守着玉土堂的静气。他的书法，笔力沉雄如黔北山石，线条温润如涧中璞玉，起笔藏锋如土纳玉，收笔劲健如玉破石，一画一墨，皆映着玉与土的相生相成。画鸣先生常言，书画非炫技，乃以笔为锄，以墨为土，耕心种玉，让文字与线条，长成有根有魂的风景。</p>
+        <p>大娄山下，九道水蜿蜒而来，林泉叠翠，崖壁如屏。麻湾洞飞瀑垂练，崖石经千年水濯，肌理如璞，正宜镌文留痕。张画鸣先生挥毫题写“九道水”三字，字大如斗，笔势开张，藏山之雄、水之秀、土之厚、玉之润。一笔入石，便与崖壁共生，墨痕化金石，笔墨成永恒。这摩崖石刻，不是简单的题字，是玉土堂文脉的延伸，是以藏玉土哲思的具象——玉藏于土，文镌于石，山水无言，笔墨有声。</p>
+        <p>立于崖下仰望，石壁苍苍，字迹巍巍。风过林梢，如笔锋扫过素笺；泉鸣深涧，如墨汁渗入宣麻。九道水的灵秀，因石刻而有了文心；玉土堂的坚守，因山水而有了归处；以藏玉土的谦德，因笔墨而有了传承。土不矜其厚，玉不炫其光，书不逞其势，石不扬其坚，四者相融，便是黔北文脉最动人的模样。</p>
+        <p>玉藏于土，千年不腐；文镌于石，百世流芳。玉土堂的灯，依旧明亮；画鸣先生的笔，依旧沉实；九道水的崖，依旧矗立。以土藏玉，以书镌山，以心传文，这一方水土的温润与风骨，便在笔墨与金石间，生生不息。</p>
+    </div>
+
+    <!-- 图片部分（按顺序排列） -->
+    <!-- 第一张图：张画鸣先生水墨肖像 -->
+    <div class="image-item">
+        <img src="./1.jpg">
+        <div class="image-desc">张画鸣先生水墨肖像</div>
+    </div>
+
+    <!-- 第二张图：玉土堂牌匾 -->
+    <div class="image-item">
+        <img src="./2.jpg">
+        <div class="image-desc">玉土堂牌匾实景</div>
+    </div>
+
+    <!-- 第四张图：九道水摩崖山水 -->
+    <div class="image-item">
+        <img src="./3.jpg">
+        <div class="image-desc">九道水摩崖山水实景</div>
+
+    <!-- 第三张图：书法对联 -->
+    <div class="image-item">
+        <img src="./4.jpg">
+        <div class="image-desc">玉土堂书法对联：玉經良匠方成器，土蘊精石可補天</div>
+    </div>
+    </div>
+</body>
+</html>
